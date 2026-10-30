@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeVista Academy | Modern Coding & Web Development Courses</title>
+    <meta
+      name="description"
+      content="Turn your ideas into real-world projects through practical coding courses, expert guidance, and a supportive community."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#hero" class="logo" aria-label="CodeVista Academy Home">
+          <div class="logo-icon"><i class="fa-solid fa-code"></i></div>
+          <div class="logo-text">
+            <span class="brand-name">CodeVista Academy</span>
+            <span class="brand-tagline">LEARN · BUILD · GROW</span>
+          </div>
+        </a>
+
+        <input
+          type="checkbox"
+          id="nav-toggle"
+          class="nav-toggle"
+          aria-label="Toggle Navigation Menu"
+        />
+
+        <label
+          for="nav-toggle"
+          class="mobile-menu-toggle"
+          id="mobile-menu-toggle"
+        >
+          <i class="fa-solid fa-bars open-icon"></i>
+          <i class="fa-solid fa-xmark close-icon"></i>
+        </label>
+
+        <nav class="nav-menu" id="nav-menu">
+          <a href="#hero" class="nav-link">Home</a>
+          <a href="#courses" class="nav-link">Courses</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section" id="hero">
+        <div class="container hero-container">
+          <div class="hero-content">
+            <span class="badge">Your Skills + Our Mission</span>
+            <h1 class="hero-title">
+              Welcome to <br /><span class="highlight">CodeVista Academy</span>
+            </h1>
+            <p class="hero-description">
+              We help you turn your ideas into real-world projects through
+              practical coding courses, expert guidance, and a supportive
+              learning community.
+            </p>
+            <div class="hero-buttons">
+              <a href="#courses" class="btn btn-primary"
+                >Explore Courses <i class="fa-solid fa-arrow-right"></i
+              ></a>
+              <a href="#about" class="btn btn-secondary">Learn More</a>
+            </div>
+          </div>
+
+          <div class="hero-image-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80"
+              alt="Developer coding on a modern workstation setup"
+              class="hero-img"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="courses-section" id="courses">
+        <div class="container">
+          <div class="section-header center">
+            <span class="section-category">OUR COURSES</span>
+            <h2>Popular Courses</h2>
+            <p>
+              Choose from our carefully designed courses and start your coding
+              journey today.
+            </p>
+          </div>
+
+          <div class="courses-grid">
+            <article class="course-card">
+              <div class="card-header">
+                <div class="course-icon icon-blue">
+                  <i class="fa-solid fa-code"></i>
+                </div>
+              </div>
+              <h3 class="course-title">HTML & CSS Fundamentals</h3>
+              <span class="course-id">Course 01</span>
+              <p class="course-desc">
+                Learn the structure of web pages and create beautiful,
+                responsive layouts from scratch.
+              </p>
+              <a href="#contact" class="card-link"
+                >Start Learning <i class="fa-solid fa-arrow-right"></i
+              ></a>
+              <span class="course-card-num">01</span>
+            </article>
+
+            <article class="course-card course-featured">
+              <div class="featured-badge">
+                <i class="fa-solid fa-star"></i> Most Popular
+              </div>
+              <div class="card-header">
+                <div class="course-icon icon-purple">
+                  <i class="fa-brands fa-js"></i>
+                </div>
+              </div>
+              <h3 class="course-title">JavaScript Basics</h3>
+              <span class="course-id">Course 02</span>
+              <p class="course-desc">
+                Add interactivity, logic, and dynamic DOM content to your
+                websites with modern JavaScript (ES6+).
+              </p>
+              <a href="#contact" class="card-link"
+                >Start Learning <i class="fa-solid fa-arrow-right"></i
+              ></a>
+              <span class="course-card-num">02</span>
+            </article>
+
+            <article class="course-card">
+              <div class="card-header">
+                <div class="course-icon icon-amber">
+                  <i class="fa-brands fa-python"></i>
+                </div>
+              </div>
+              <h3 class="course-title">Python for Beginners</h3>
+              <span class="course-id">Course 03</span>
+              <p class="course-desc">
+                Learn Python syntax, control structures, and algorithms to build
+                practical scripts and applications.
+              </p>
+              <a href="#contact" class="card-link"
+                >Start Learning <i class="fa-solid fa-arrow-right"></i
+              ></a>
+              <span class="course-card-num">03</span>
+            </article>
+
+            <article class="course-card">
+              <div class="card-header">
+                <div class="course-icon icon-pink">
+                  <i class="fa-solid fa-laptop-code"></i>
+                </div>
+              </div>
+              <h3 class="course-title">Responsive Web Design</h3>
+              <span class="course-id">Course 04</span>
+              <p class="course-desc">
+                Master CSS Grid, Flexbox, and media queries to make websites
+                adapt smoothly to all screen sizes.
+              </p>
+              <a href="#contact" class="card-link"
+                >Start Learning <i class="fa-solid fa-arrow-right"></i
+              ></a>
+              <span class="course-card-num">04</span>
+            </article>
+
+            <article class="course-card">
+              <div class="card-header">
+                <div class="course-icon icon-emerald">
+                  <i class="fa-solid fa-code-branch"></i>
+                </div>
+              </div>
+              <h3 class="course-title">Git & GitHub</h3>
+              <span class="course-id">Course 05</span>
+              <p class="course-desc">
+                Understand version control, branch workflows, and remote
+                repository hosting to collaborate effectively.
+              </p>
+              <a href="#contact" class="card-link"
+                >Start Learning <i class="fa-solid fa-arrow-right"></i
+              ></a>
+              <span class="course-card-num">05</span>
+            </article>
+
+            <article class="course-card">
+              <div class="card-header">
+                <div class="course-icon icon-indigo">
+                  <i class="fa-solid fa-desktop"></i>
+                </div>
+              </div>
+              <h3 class="course-title">Web Development Project</h3>
+              <span class="course-id">Course 06</span>
+              <p class="course-desc">
+                Synthesize your HTML, CSS, and JS skills by building a complete
+                capstone web application.
+              </p>
+              <a href="#contact" class="card-link"
+                >Start Learning <i class="fa-solid fa-arrow-right"></i
+              ></a>
+              <span class="course-card-num">06</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="benefits-section" id="benefits">
+        <div class="container">
+          <div class="benefits-layout">
+            <div class="benefits-intro">
+              <span class="section-category">STUDENT BENEFITS</span>
+              <h2>Why Choose Us?</h2>
+              <p>
+                At CodeVista Academy, we go beyond just teaching code syntax. We
+                provide structured guidance, hands-on practice, and continuous
+                mentorship to help you reach your goals.
+              </p>
+              <a href="#about" class="btn btn-primary"
+                >Learn More <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+
+            <div class="benefits-cards-grid">
+              <div class="benefit-card">
+                <div class="benefit-icon">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <h3>Expert Guidance</h3>
+                <p>
+                  Get personalized support and constructive feedback from
+                  experienced industry developers.
+                </p>
+              </div>
+
+              <div class="benefit-card">
+                <div class="benefit-icon">
+                  <i class="fa-solid fa-laptop-code"></i>
+                </div>
+                <h3>Hands-on Projects</h3>
+                <p>
+                  Reinforce your learning by building real-world projects that
+                  showcase your talent in your portfolio.
+                </p>
+              </div>
+
+              <div class="benefit-card">
+                <div class="benefit-icon">
+                  <i class="fa-solid fa-clock-rotate-left"></i>
+                </div>
+                <h3>Lifetime Access</h3>
+                <p>
+                  Enjoy permanent access to updated course materials and
+                  learning resources to study at your own pace.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-contact-section" id="about">
+        <div class="container">
+          <div class="about-contact-grid">
+            <div class="info-card about-card">
+              <span class="section-category">ABOUT OUR ACADEMY</span>
+              <h2>Learn Today, Build Tomorrow</h2>
+              <p>
+                At CodeVista Academy, we believe in practical learning, real
+                projects, and continuous growth. Our mission is to equip
+                aspiring developers with in-demand technical skills to launch
+                fulfilling careers in tech.
+              </p>
+
+              <div class="stats-grid">
+                <div class="stat-item">
+                  <i class="fa-solid fa-users"></i>
+                  <span class="stat-number">500+</span>
+                  <span class="stat-label">Students Mentored</span>
+                </div>
+                <div class="stat-item">
+                  <i class="fa-solid fa-book-open"></i>
+                  <span class="stat-number">6</span>
+                  <span class="stat-label">Focused Courses</span>
+                </div>
+                <div class="stat-item">
+                  <i class="fa-solid fa-certificate"></i>
+                  <span class="stat-number">100%</span>
+                  <span class="stat-label">Practical Learning</span>
+                </div>
+                <div class="stat-item">
+                  <i class="fa-solid fa-briefcase"></i>
+                  <span class="stat-number">Better</span>
+                  <span class="stat-label">Career Outcomes</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="info-card contact-card" id="contact">
+              <span class="section-category">GET IN TOUCH</span>
+              <h2>Contact Us</h2>
+              <p>
+                Have questions about enrolling or course structure? Reach out
+                directly—we are happy to guide you.
+              </p>
+
+              <ul class="contact-details">
+                <li>
+                  <div class="contact-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div class="contact-text">
+                    <span class="label">Email us</span>
+                    <a href="mailto:hello@codevistaacademy.com" class="val"
+                      >hello@codevistaacademy.com</a
+                    >
+                  </div>
+                </li>
+                <li>
+                  <div class="contact-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div class="contact-text">
+                    <span class="label">Visit us</span>
+                    <span class="val">Islamabad, Pakistan</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="contact-icon">
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+                  <div class="contact-text">
+                    <span class="label">Call us</span>
+                    <a href="tel:+923001234567" class="val">+92 300 1234567</a>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="contact-motto">
+                <i class="fa-solid fa-sparkles"></i> Let's Build Your Tech
+                Future Together
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-col col-brand">
+            <a href="#hero" class="logo footer-logo">
+              <div class="logo-icon"><i class="fa-solid fa-code"></i></div>
+              <div class="logo-text">
+                <span class="brand-name">CodeVista Academy</span>
+                <span class="brand-tagline">LEARN · BUILD · GROW</span>
+              </div>
+            </a>
+            <p class="footer-brand-desc">
+              Empowering aspiring tech talent through practical, project-based
+              coding courses and mentorship.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-heading">Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#courses">Courses</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-heading">Our Courses</h4>
+            <ul class="footer-links">
+              <li><a href="#courses">HTML & CSS</a></li>
+              <li><a href="#courses">JavaScript</a></li>
+              <li><a href="#courses">Python</a></li>
+              <li><a href="#courses">Responsive Web Design</a></li>
+              <li><a href="#courses">Git & GitHub</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-heading">Connect With Us</h4>
+            <p class="footer-connect-desc">
+              Follow our updates or drop us a line directly.
+            </p>
+            <div class="footer-social-icons">
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn Portfolio"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a
+                href="https://github.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub Repositories"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://codevistaacademy.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Official Website"
+                ><i class="fa-solid fa-globe"></i
+              ></a>
+              <a
+                href="mailto:hello@codevistaacademy.com"
+                aria-label="Send Email"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="footer-bottom">
+          <p class="copyright-text">
+            &copy; 2026 CodeVista Academy. All rights reserved.
+            <br>Developed by: Nismat Fatima Kazmi|Roll Number: 3121168
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
